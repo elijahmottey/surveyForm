@@ -7,6 +7,7 @@ const Forms = () =>{
     const HandleSubmit = () =>{
         setSubmit(()=>alert("forms submitted"))
     }
+   
     return(
         <>
         <form >
@@ -18,9 +19,10 @@ const Forms = () =>{
               <label><input type="checkbox"/>Average</label>
               <label><input type="checkbox"/>Poor</label>
 
-            </div>
-            {Submit} <br/>
+            </div><br/>
+            
             <button onClick={ HandleSubmit }>Submit</button>
+           <br/> {Submit}
         </form>
         </>
     )
